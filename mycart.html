@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/detail.css" />
+	<link rel="stylesheet" href="css/mycart.css" />
+	<link rel="stylesheet" href="css/mycart2.css" />
+	<body>
+	<!--导航start-->
+	<div id="site-nav" class="site-nav">
+		<div id="sn-bd" class="sn-bd">  
+			<div class="sn-container clearfix">    
+				<ul class="header-quick-menu clearfix fl">        
+					<li class="curpage"><a href="#" class="m_top_nav_stats" name="__AD_m_home" data-position="m_top_nav_1" data-type="m_home" data-index="母婴之家">母婴之家</a></li>         
+					<li><a href="#" class="m_top_nav_stats" data-position="m_top_nav_3" name="__AD_h_home" data-type="h_home" data-index="母婴海淘">母婴海淘</a></li>        
+					<li class="phonebox" id="phonebox">         
+						<div class="phonediv">                 
+							<i class="sprite-icon icon-mobile-phone"></i>           
+							<a href="#" name="__AD_app_home">手机版</a>       
+						</div>           
+						<div class="phonehidediv" id="phonehidediv" style="display: none;">                     
+							<a href="#" title="二维码" style="display:block;">   
+								<img src="" alt="二维码">        
+							</a>            
+						</div>        
+					</li>      
+				</ul>       
+				<ul class="ssn-quick-menu clearfix fr">          
+					<li class="ssn-login-info">                  
+						<span>欢迎来到母婴之家！</span>&nbsp;&nbsp;	
+						<a href="http://127.0.0.1/babyhouse0911/login.html"  id="loginBtn">[登录]</a>          
+						<a href="http://127.0.0.1/babyhouse0911/register.html"  id="regBtn">[免费注册]</a>            
+					</li>                       
+					<li class="ssn-separator"></li>                   
+					<li class="ssn-home" id="ssn-home">              
+						<div class="ssn-hover-div">                   
+							<a href="#" class="stats" data-position="page_top_6" target="_self">我的订单</a>     
+							<b></b>        
+						</div>              
+						<div id="Theader_down01" class="Theader_top01_divON" style="display: none;">               
+							<a href="#" class="stats" data-position="page_top_6" target="_self">我的家</a><br>        
+							<a href="#" class="stats" data-position="page_top_8">我的提问</a><br>   
+							<a href="#" class="stats" data-position="page_top_9" target="_self">我的评论</a><br>         
+							<a href="#" class="stats" data-position="page_top_10" target="_self">我的收藏</a><br>      
+							<a href="#" class="stats" data-position="page_top_11" target="_self">我的幸运星</a>      
+						</div>        
+					</li>          
+					<li class="ssn-separator"></li>   
+					<li class="ssn-mybrand" id="ssn-mybrand">        
+						<div class="ssn-hover-div">               
+							<a href="#" class="stats" data-position="page_top_CustomerService" target="_self">客户服务</a>   
+							<b></b>              
+						</div>              
+						<div id="Theader_down03" class="Theader_top01_divON" style="display:none;">            
+							<a href="#" class="stats" data-position="page_top_ServiceOnline" target="_blank">在线客服</a><br>        
+							<a href="#" class="stats" data-position="page_top_5">帮助中心</a><br>            
+						</div>     
+					</li>    
+					<li class="ssn-separator"></li>     
+					<li class="ssn-myorder">              
+						<a href="#" class="stats" data-position="page_top_5">商务合作</a>      
+					</li>     
+					<li class="ssn-separator"></li>   
+					<li class="ssn-myorder">            
+						<a href="#" class="stats" data-position="page_top_categoryNav">分类导航</a>     
+					</li>                    
+				</ul>   
+			</div>
+	    </div>
+	</div>
+	<!--导航end-->
+	<!--cart start-->
+	<div class="cart-outer">
+		<div class="logo-step">
+			<div class="logo">
+				<h1>
+					<a href="#"><img src="image/logo29new.png"/></a>
+				</h1>
+			</div>
+			<div class="step"></div>
+		</div>
+		<div class="cart3_area_box" id="cart3_area_box">
+			<div class="cart-top bot-line">
+				<div class="tit-n">
+					<h2>我的购物车</h2>
+				</div>
+				<div class="login">
+					<span>立即<a href="#" id="cartLoginBtn">[登录]</a>,可将商品永久保存在购物车中</span>
+				</div>
+			</div>
+			<div class="cart cart3">
+				<div class="cart-box">
+					<div class="cart3_area" id="cartType2">
+						<div class="cart3_tit">
+							<div class="cart3_tit_l">
+								<input type="checkbox" class="cart3_checkbox fl" name="cart3_area_input">
+								<span class="inblock"><a class="fl label" href="#/">供应商发货</a></span>
+								<span class="inblock"><span class="ct-t " id="cartDesc_2">供应商购物车</span></span>
+							</div>
+							<span class="price">单价（元）</span>
+							<span class="num">数量（件）</span>
+							<span class="span_width_90">小计（元）</span>
+							<span class="action">操作</span>
+						</div>
+						<ul class="cart3_list">
+							<!--<li data-action="1" class="cart3_prod select item_group">
+								<a href="#" class="pic inblock"><img src="image/yangganju.jpg"/></a>
+								<span class="tit inblock"> 
+                                        <a href="#" class="" data-position="flashItem_1">亲润 洋甘菊舒护紧致眼凝露</a>           
+                                </span>
+                                <span class="price inblock"><ins>¥88.00</ins></span>
+                                <span class="num inblock">
+                                    <a href="#" class="min" id="minus"> <span></span></a>
+                                    <input type="text" maxlength="3" value="1" class="inblock inputTip"> 
+                                    <a href="#" class="min" id="add"> <span></span><em></em> </a> 
+                                </span>
+                                <span class="inblock count"><strong>￥88.00</strong></span>
+                                <span class="action inblock"><a href="#" class="btn_del">删除 </a></span>
+							</li>-->
+						</ul>
+						<div class="cart_check">
+							<!--<span class="dist inblock"></span>
+							<span class="checktext inblock"> 小计：  </span>-->
+							<!--<span class="totle_price inblock">88.00</span>-->
+						</div>
+					</div>
+					<div class="coupon_area">
+						<div class="coupon_box">
+							<span class="inblock coupon-form">
+	                            <input type="text"  id="userCouponValue" value="请输入优惠码">
+	                            <a class="use" id="userCoupon" data-info="">使用</a> </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 1090px; margin: 0 auto;">
+			<div id="cart3_bott_box">
+				<div id="cart3_bott" class="">
+			        <div class="cart3_bott">
+			            <div class="ac">
+			                <a href="#" class="delete inblock" id="delete_All" >清空购物车</a>
+			            </div>
+			            <div class="a-m">
+			                <!--<span class="inblock submit">            
+			                    <a href="#" id="submitOrder" class="submit_b" data-cart="0">确认订单</a>			               
+			                </span>-->
+			               <!-- <span class="inblock totCash" id="totCash">88.00</span>
+			                <span class="inblock det">共有<strong id="BuyTotalCount">1</strong> 件商品，总计(不含运费)：</span>-->
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!--cart end-->
+	<!--footer start-->
+	<div class="foot-beian">
+        <span>由本网站发布的商品或服务的商业宣传活动均属“广告”<br></span>
+        <span>Copyright©2003-2017 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：（021）4008201000</span>
+	    <div class="foot-gongwang">
+			<a href="#"  target="_blank">
+			    <img src="image/shanghai_industry.gif">
+			</a>
+            <a target="_blank" style="margin-left: 10px; display: inline-block;" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">
+                <span style=" color: #939393;vertical-align: 5px;margin-right: 5px;">沪ICP备09021709号</span>
+            </a>
+            <a target="_blank" style="margin-left: 5px; display: inline-block;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000751">
+                <img style="display:inline-block" src="image/ghs.png">
+                <span style="color: #939393; vertical-align: 5px; margin-left: 0px;">沪公网安备 31010402000751号</span>
+            </a>
+		</div>
+	</div>
+	<!--footer end-->
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/detail.js"></script>
+<script src="js/mycart.js"></script>
