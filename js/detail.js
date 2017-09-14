@@ -5,7 +5,7 @@ var pid = str.split("=")[1];
 
 $.ajax({
 	type:"get",
-	url:"http://127.0.0.1/babyhouse0911/data.json",
+	url:"https://fangxueqin.github.io/fangxueqin2017-09-14/data.json",
 	success : function( res ){
 		var htm1 = "" ;
 		var htm2 = "";
@@ -117,7 +117,7 @@ $(".conTopConBox").on("click","#jCarbtn1",function(){
 	setCookie("shoplist",JSON.stringify(arr));
 	var f = confirm("是否继续购买")
 	if(!f){
-		location.href = "http://127.0.0.1/babyhouse0911/mycart.html"  //连接购物车网址
+		location.href = "https://fangxueqin.github.io/fangxueqin2017-09-14/mycart.html"  //连接购物车网址
 	}
 	console.log(document.cookie);
 })

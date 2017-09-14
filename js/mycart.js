@@ -60,5 +60,5 @@ $(".btn_del").click(function(){
 })
 //跳转到购物车2
 $("#submitOrder").click(function(){
-	location.href = "http://127.0.0.1/babyhouse0911/mycart2.html";
+	location.href = "https://fangxueqin.github.io/fangxueqin2017-09-14/mycart2.html";
 })
