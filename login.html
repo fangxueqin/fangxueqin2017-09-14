@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/header.css" type="text/css"/>
+	<link rel="stylesheet" href="css/login.css" type="text/css"/>
+	<body>
+		<div id="header"></div>
+		<div id="wrap"></div>
+		<!--main start -->
+		<div id="main" style="padding-top: 55px;">
+			<div class="wrapper" >
+				<div class="sign-content">
+					<div class="sign-nav login-nav">
+						<ul>
+							<li>
+								<a href="http://127.0.0.1/babyhouse0911/register.html"><i></i>注册</a>
+							</li>
+							<li  class="selected">
+								<a href="http://127.0.0.1/babyhouse0911/login.html"><i></i>登录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-left login-right">
+						<form action="http://127.0.0.1/babyhouse0911/index.html" method="post" id="login-form" name="login-form">
+							<ul class="register-form login-form clear">
+								<li>
+									<label  class="label">账户名</label>
+									<div class="inputcont">
+										<input type="text" id="login-email" class="g-ipt" placeholder="请填入邮箱或手机号" maxlength="100" />
+										<i class="tel-icon login-icon"></i>
+									</div>
+								</li>
+								<li>
+									<label  class="label">密码:</label>
+									<div class="inputcont">
+										<input type="password" id="password1" class="g-ipt" placeholder="请填入密码" maxlength="20" />
+										<i class="password-icon"></i>
+									</div>
+								</li>
+								<li style="min-height: 20px;">
+									<label  class="label">&nbsp;</label>
+									<div class="inputcont">
+										<div class="argwrap">
+											<label>
+												<input type="checkbox" id="remember" class="checkbox" checked="checked" />记住我(30天内免登录)
+											</label>
+											<a href="#" class="forgetpassword">忘记密码?</a>	
+										</div>
+									</div>
+								</li>
+								<li class="submit-area">
+									<label class="label">&nbsp;</label>
+									<div class="inputcont">
+										<div class="argwrap">
+											<input type="button" id="login_btn" class="submit-signin" />
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="otherwise">
+								<div class="sign-title-right">使用合作网站账号登录母婴之家：</div>
+								<ul class="sign-right-list">
+									<li class="othercount">
+										<a href="#" class="weibo"></a>
+									</li>
+									<li class="othercount">
+										<a href="#" class="alipay"></a>
+									</li>
+									<li class="othercount">
+										<a href="#" class="qq"></a>
+									</li>								
+								</ul>
+							</div>
+						</form>
+					</div>
+					<div class="sign-right login-left">
+						<a href="#">
+							<img src="image/login.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main end -->
+		<div id="footer"></div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/denglu.js"></script>
+<script type="text/javascript">
+	$("#header").load("header.html #site-nav",function(){
+		
+	})
+	$("#wrap").load("header.html .wrap")
+	
+	var arr = getCookie("ff");
+	$("#login_btn").click(function(){
+	for( var i=0 ; i<arr.length ; i++ ){
+			if( $("#login-email").val() == arr[i].tel ){
+				if( $("#password1").val() == arr[i].pwd ){
+					alert( "登录成功" );
+				}else{
+					alert( "登录失败" );
+				}
+			}else{
+				alert( "手机号格式不正确" );
+			}
+		}
+	})
+	$("#footer").load("header.html .tfc_footer")
+</script>
