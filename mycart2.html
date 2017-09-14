@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/mycart.css" />
+		<link rel="stylesheet" href="css/mycart2.css" />
+	</head>
+	<body>
+	<!--导航start-->
+	<div id="site-nav" class="site-nav">
+		<div id="sn-bd" class="sn-bd">  
+			<div class="sn-container clearfix">    
+				<ul class="header-quick-menu clearfix fl">        
+					<li class="curpage"><a href="#" class="m_top_nav_stats" name="__AD_m_home" data-position="m_top_nav_1" data-type="m_home" data-index="母婴之家">母婴之家</a></li>         
+					<li><a href="#" class="m_top_nav_stats" data-position="m_top_nav_3" name="__AD_h_home" data-type="h_home" data-index="母婴海淘">母婴海淘</a></li>        
+					<li class="phonebox" id="phonebox">         
+						<div class="phonediv">                 
+							<i class="sprite-icon icon-mobile-phone"></i>           
+							<a href="#" name="__AD_app_home">手机版</a>       
+						</div>           
+						<div class="phonehidediv" id="phonehidediv" style="display: none;">                     
+							<a href="#" title="二维码" style="display:block;">   
+								<img src="" alt="二维码">        
+							</a>            
+						</div>        
+					</li>      
+				</ul>       
+				<ul class="ssn-quick-menu clearfix fr">          
+					<li class="ssn-login-info">                  
+						<span>欢迎来到母婴之家！</span>&nbsp;&nbsp;	
+						<a href="#"  id="loginBtn">[登录]</a>          
+						<a href="#"  id="regBtn">[免费注册]</a>            
+					</li>                       
+					<li class="ssn-separator"></li>                   
+					<li class="ssn-home" id="ssn-home">              
+						<div class="ssn-hover-div">                   
+							<a href="#" class="stats" data-position="page_top_6" target="_self">我的订单</a>     
+							<b></b>        
+						</div>              
+						<div id="Theader_down01" class="Theader_top01_divON" style="display: none;">               
+							<a href="#" class="stats" data-position="page_top_6" target="_self">我的家</a><br>        
+							<a href="#" class="stats" data-position="page_top_8">我的提问</a><br>   
+							<a href="#" class="stats" data-position="page_top_9" target="_self">我的评论</a><br>         
+							<a href="#" class="stats" data-position="page_top_10" target="_self">我的收藏</a><br>      
+							<a href="#" class="stats" data-position="page_top_11" target="_self">我的幸运星</a>      
+						</div>        
+					</li>          
+					<li class="ssn-separator"></li>   
+					<li class="ssn-mybrand" id="ssn-mybrand">        
+						<div class="ssn-hover-div">               
+							<a href="#" class="stats" data-position="page_top_CustomerService" target="_self">客户服务</a>   
+							<b></b>              
+						</div>              
+						<div id="Theader_down03" class="Theader_top01_divON" style="display:none;">            
+							<a href="#" class="stats" data-position="page_top_ServiceOnline" target="_blank">在线客服</a><br>        
+							<a href="#" class="stats" data-position="page_top_5">帮助中心</a><br>            
+						</div>     
+					</li>    
+					<li class="ssn-separator"></li>     
+					<li class="ssn-myorder">              
+						<a href="#" class="stats" data-position="page_top_5">商务合作</a>      
+					</li>     
+					<li class="ssn-separator"></li>   
+					<li class="ssn-myorder">            
+						<a href="#" class="stats" data-position="page_top_categoryNav">分类导航</a>     
+					</li>                    
+				</ul>   
+			</div>
+	    </div>
+	</div>
+	<!--导航end-->
+	<!--mycart start-->
+	<div class="order-outer">
+		<div class="logo-step">
+			<div class="logo">
+				<h1>
+					<a href="#"><img src="image/logo29new.png"/></a>
+				</h1>
+			</div>
+			<div class="step"></div>
+		</div>
+		<div class="checkout">
+			<div class="checkout-step-1" id="checkout-step-2">
+				<div class="step-title">
+					<h2>收货信息</h2>
+				</div>
+				<div class="step-content">
+					<div class="sbox-wrap" id="consignee">
+						<div class="sbox">
+							<div class="form">
+								<div class="write-info" id="write-info">
+									<div class="consignee-form" id="consignee-form">
+										<div class="list" id="name_div">
+											<span class="label"><em>*</em>收货人:</span>
+											<div class="field">
+												<input type="text" class="textbox" id="consignee_name" name="consigneeParam.name" maxlength="10">
+											</div>
+										</div>
+										<div class="list select-address" id="area_div">
+											<span class="label"><em>*</em>所在地区：</span>
+											<div class="field">
+												<select id="consignee_province" name="consigneeParam.provinceId">
+                                                    <option value="0">请选择：</option>
+                                                    <option value="1000001">北京市</option>
+                                                    <option value="1000009">上海市</option>
+                                                    <option value="1000010">江苏省</option>
+                                                </select>
+                                                <select id="consignee_city" name="consigneeParam.cityId">
+                                                    <option value="" selected="">请选择：</option>
+                                                </select>
+                                                    <select id="consignee_county" name="consigneeParam.countyId">
+                                                    <option value="" selected="">请选择：</option>
+                                                </select>
+											</div>
+										</div>
+										<div class="list full-address" id="address_div">
+											<span class="label"><em>*</em>详细地址：</span>
+											<div class="field">
+	                                            <input type="text" class="textbox" id="consignee_address"  maxlength="50">
+	                                        </div>
+										</div>
+										<div class="list" id="call_mobile_div">
+											<span class="label"><em>*</em>手机号码：</span>
+											<div class="field">
+	                                            <input type="text" class="textbox" id="consignee_mobile" name="consigneeParam.mobile" maxlength="11">
+	                                        </div>
+										</div>
+										<div class="list" id="call_phone_div">
+											<span class="label">固定电话：</span>
+											<div class="field">
+	                                            <input type="text" class="textbox" id="consignee_phone_left"  maxlength="3" value="区号">
+	                                            <s>--</s>
+	                                            <input type="text" class="textbox" id="consignee_phone_middle"  maxlength="8" value="电话号码">
+	                                            <s>--</s>
+	                                            <input type="text" class="textbox" id="consignee_phone_right" maxlength="4" value="分机号">
+	                                        </div>
+										</div>
+									</div>
+									<div class="form-btn grounp">
+										<a href="#none" class="btn-submit" style="display: block" id="saveConsignee"><span id="saveConsigneeTitleDiv">保存收货人信息</span></a>
+										<a href="#none" class="btn-cancel " id="cancelsaveConsignee"><span>取消</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="responseList">
+				<div class="checkout-step-2" id="checkout-step-2">
+					<div class="step-title"><h2>支付方式</h2></div>
+					<div class="step-content-type1" id="step-content-pay-sure" style="display: block">请先 “确认收货信息”</div>
+				</div>
+				<div class="checkout-step-3" id="checkout-step-3">
+					<div class="step-title"><h2>发票信息</h2></div>
+					<div class="step-content-type1" id="step-content-pay-sure" style="display: block">请先 “确认收货信息”</div>
+				</div>
+				<div class="orderhtml">
+					<div class="checkout-step-4" id="checkout-step-4">
+						<div class="step-title">
+				            <h2 class="fl">送货清单</h2>
+				            <a class="fr" href="/Cart" target="_self">返回购物车修改</a>
+				        </div>
+				        <div class="step-content">
+				        	<div class="sbox-wrap" id="part-order">
+				        		<div class="part-order-dl">
+				        			<div class="part-order-dt">
+				        				<div class="fl">
+		                                    <span class="order-type-shang">商城</span>&nbsp;&nbsp;订单<span class="order-num">1</span>
+		                                    <em>母婴之家发货</em>
+		                                </div>
+		                                <div class="fl" style="position: relative;"><span class="order-fore">请先 “确认收货信息”</span>                                </div>
+				        			</div>
+				        			<div class="part-order-dd">
+				        				<div class="order-review-thead">
+				        					<span class="fore-name">商品信息</span>
+				        					<span class="fore-price">单价（元）</span>
+				        					<span class="fore-num">数量（件）</span>
+				        					<span class="fore-cal">小计（元）</span>
+				        				</div>
+				        				<div class="order-review-tbody">
+				        					<ul class="order-review-list">
+				        						<li name="product">
+				        							<a href="#" class="pic inblock"><img src="image/shaozi.jpg"/></a>
+				        							<span class="tit inblock">
+                                                    	<a href="#" title="贝亲哺喂勺组">贝亲哺喂勺组</a>
+				        							</span>
+				        							<span class="price inblock"><ins>¥26.60</ins></span>
+				        							<span class="num inblock"><ins>2</ins></span>
+				        							<span class="count inblock"><strong>¥53.20</strong></span>
+				        						</li>
+				        					</ul>
+				        				</div>
+				        				<div class="order-review-tfoot">
+				        					<div class="fl">
+				        						<div class="order-review-tfoot-fl-dt">
+                                                    <a href="#">若您对包裹有特殊要求，请在此留言</a>                                        
+                                            	</div>
+				        					</div>
+				        					<div class="order-review-tfoot-fr">
+				        						<div class="order-review-tfoot-list">
+		                                            <span class="pro-totle">应付金额：</span>
+		                                            <strong>¥53.20</strong>
+		                                        </div>
+				        					</div>				        					
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--mycart end-->
+	<!--foot start-->
+	<div class="foot-beian">
+        <span>由本网站发布的商品或服务的商业宣传活动均属“广告”<br></span>
+        <span>Copyright©2003-2017 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：（021）4008201000</span>
+	    <div class="foot-gongwang">
+			<a href="#"  target="_blank">
+			    <img src="image/shanghai_industry.gif">
+			</a>
+            <a target="_blank" style="margin-left: 10px; display: inline-block;" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">
+                <span style=" color: #939393;vertical-align: 5px;margin-right: 5px;">沪ICP备09021709号</span>
+            </a>
+            <a target="_blank" style="margin-left: 5px; display: inline-block;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000751">
+                <img style="display:inline-block" src="image/ghs.png">
+                <span style="color: #939393; vertical-align: 5px; margin-left: 0px;">沪公网安备 31010402000751号</span>
+            </a>
+		</div>
+	</div>
+	<!--foot end-->
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/mycart.js"></script>
+<script src="js/mycart2.js"></script>
