@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="wrap"></div>
+		<!--main start -->
+		<div id="main" style="padding-top: 55px;">
+			<div class="wrapper" >
+				<div class="sign-content register-form-height">
+					<div class="sign-nav">
+						<ul>
+							<li class="selected">
+								<a href="#"><i></i>注册</a>
+							</li>
+							<li>
+								<a href="#"><i></i>登录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-left">
+						<form action="http://127.0.0.1/babyhouse0911/login.html" method="post" id="reg-form">
+							<ul class="register-form clear">
+								<li>
+									<label  class="label">手机号:</label>
+									<div class="inputcont">
+										<input type="text" id="tel" class="g-ipt-err" placeholder="请填入手机号" maxlength="50" />
+										<p id="p1"></p>
+										<i class="tel-icon"></i>
+									</div>
+								</li>
+								<li>
+									<label  class="label">请设置密码:</label>
+									<div class="inputcont">
+										<input type="password" id="pwd" class="g-ipt" placeholder="请填入密码" maxlength="20" />
+										<p id="p2"></p>
+										</div>
+										<i class="password-icon"></i>
+								</li>
+								<li>
+									<label  class="label">请确认密码:</label>
+									<div class="inputcont">
+										<input type="password" id="qpwd" class="g-ipt" placeholder="请再次填写密码" maxlength="20" />
+										<p id="p3"></p>
+										<i class="password-icon"></i>
+									</div>
+								</li>
+								<li style="min-height: 20px;">
+									<label  class="label">&nbsp;</label>
+									<div class="inputcont">
+										<div class="argwrap">
+											<input type="checkbox" id="agreement" class="checkbox" checked="checked" />
+											<label for="agreement">
+												<p class="agreement-text">阅读并同意<a href="#">"母婴之家网站用户协议"</a></p>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li class="submit-area">
+									<label class="label">&nbsp;</label>
+									<div class="inputcont">
+										<div class="argwrap">
+											<input type="submit" id="reg_btn" class="submit-signup" value="" />
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="otherwise">
+								<div class="sign-title-right">使用合作网站账号登录母婴之家：</div>
+								<ul class="sign-right-list">
+									<li class="othercount">
+										<a href="#" class="weibo"></a>
+									</li>
+									<li class="othercount">
+										<a href="#" class="alipay"></a>
+									</li>
+									<li class="othercount">
+										<a href="#" class="qq"></a>
+									</li>								
+								</ul>
+							</div>
+						</form>
+					</div>
+					<div class="sign-right">
+						<a href="#">
+							<img src="image/smallbaby.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main end -->
+		<div id="footer"></div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/zhuce.js"></script>
+<script src="js/cookie.js"></script>
+<script type="text/javascript">
+	$("#header").load("header.html #site-nav",function(){
+		
+	})
+	$("#wrap").load("header.html .wrap",function(){
+		
+	})
+	var arr = [];
+	$("#reg_btn").click(function(){
+		if( flagTel && flagPwd && flagQpwd ){
+			var _json = {
+				"tel" : $("#tel").val(),
+				"pwd" : $("#pwd").val(),
+				"qpwd" : $("#qpwd").val()
+			}
+			arr.push(_json);
+			setCookie( "ff",JSON.stringify(arr) );
+			return true;
+		}else{
+			return false;
+		}
+	})
+	$("#footer").load("header.html .tfc_footer")
+</script>
