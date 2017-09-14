@@ -1,0 +1,404 @@
+body { background: #ededed;  }
+html {color: #000; background: #fff; height: 100%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+article, aside, dialog, footer, header, section, footer, nav, figure, menu { display: block; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+code, kbd, pre, samp { font-family: courier new,courier,monospace; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+li { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+.clearfix { zoom: 1; display: block;}
+img { display: block; }
+a{ text-decoration: none; color:#666666}
+a:hover { color:#FF5C00; }
+.clear { margin: 0;padding: 0;clear: both;}
+
+
+.cart-outer {
+	background: #ececec;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+.logo-step {
+    width: 1090px;
+    margin: 10px auto;
+	overflow: hidden;
+}
+.logo {
+	float: left;
+}
+.cart-outer a {
+	cursor: pointer;
+}
+.logo img {
+    float: left;
+    width: 155px;
+    margin-top: 10px;
+    height: 55px;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+.step {
+	float: right;
+	background: url(../image/cart-step1.png) no-repeat;
+	width: 612px;
+	height: 36px;
+	margin-top: 22px;
+}
+.cart-top {
+    width: 1090px;
+    margin: 0 auto;
+    background: #ECECEC;
+    overflow: hidden;
+}
+.tit-n {
+    float: left;
+}
+.tit-n h2 {
+	background: url(../image/gouwuche.png) no-repeat;
+	font-weight: bold;
+	font-size: 18px;
+	color: #555;
+	padding: 10px 43px;
+}
+.login {
+	float: right;
+}
+.login span {
+	float: left;
+	color: #333333;
+	margin: 20px 17px 0 0;
+	font-size: 14px;
+}
+.login span a {
+	color: #ff5c00;
+}
+.cart {
+	width: 1090px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.cart3_area {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.cart3_tit {
+    height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #F8F8F8;
+    position: relative;
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+.cart3_tit_l {
+    float: left;
+    height: 100%;
+    width: 500px;
+    position: relative;
+    z-index: 3
+}
+.fl {
+	float: left;
+}
+.cart3_checkbox {
+    visibility: hidden;
+    margin: 15px 0 0 16px;
+}
+.cart3 .inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart3_tit .label {
+    float: left;
+    color: #333;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    text-shadow: 0 1px 0 #fff;
+}
+.cart3_tit .ct-t {
+    margin-left: 5px;
+    color: #777;
+    max-width: 388px;
+    overflow: hidden;
+}
+.cart3_tit span {
+	display: block;
+    float: left;
+    text-align: center;
+    color: #333333;
+}
+.cart3_tit .ct-t {
+	line-height: 44px;
+	text-align: center;
+	font-size: 14px;
+}
+.cart3_tit span.price {
+    width: 149px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.cart3_tit span.num {
+    width: 102px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.cart3_tit .span_width_90 {
+    width: 125px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.cart3_tit .action {
+    width: 70px;
+    line-height: 44px;
+    font-size: 14px;
+    text-align: center;
+}
+.btn_del {
+	display: block;
+	font-size: 12px;
+	width: 50px;
+	height: 12px;
+	color: #333;
+}
+.cart3_list {
+    font-size: 0;
+    border-top: 1px solid #dfdfdf;
+    padding: 8px 0 8px 40px;
+    background-color: #fff;
+}
+.cart3_list li {
+    position: relative;
+    margin: 8px 8px 8px 0;
+}
+.cart3_list .pic {
+    background-color: #fff;
+    width: 60px;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 6px;
+    background: #fff;
+}
+.cart3_list .cart3_prod .pic img {
+    width: 60px;
+    height: 60px;
+}
+.cart3_list .tit {
+    padding-left: 9px;
+    width: 367px;
+    padding-right: 12px;
+}
+.cart3_list .tit a {
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    line-height: 18px;
+}
+.cart3_list .price {
+    width: 134px;
+    padding-left: 1px;
+    text-align: center;
+}
+.cart3_list .price ins {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+}
+.cart3_list .num {
+    padding-left: 1px;
+    width: 112px;
+    font-size: 0;
+    text-align: center;
+}
+.cart3_list .num a {
+    width: 24px;
+    height: 24px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid #c8c7cc;
+    text-align: center;
+    line-height: 24px;
+    font-size: 15px;
+}
+.cart3_list .num input {
+    width: 34px;
+    height: 24px;
+    line-height: 14px;
+    border: 1px solid #c8c7cc;
+    line-height: 24px;
+    border-left: 0;
+    border-right: 0;
+    width: 34px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.cart3_list .num a span, .cart3_list .num a em {
+    width: 12px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    margin: 11px auto 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cart3_list .num a em {
+    position: relative;
+    height: 10px;
+    width: 2px;
+    margin: -6px auto 0;
+}
+.cart3_list .count {
+    position: relative;
+}
+.cart3_list .count,.cart3_list .weight {
+    width: 115px;
+    padding-left: 1px;
+    text-align: center;
+    color: #E60012;
+    line-height: 12px;
+}
+.cart3_list .count strong {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.cart3_list .action {
+    width: 92px;
+    height: 14px;
+    text-align: center;
+}
+.cart_check {
+    border-top: 1px solid #e5e5e5;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+}
+.dist {
+	width: 598px;
+	text-align: right;
+}
+.checktext {
+    text-align: right;
+    width: 135px;
+}
+.totle_price {
+    width: 146px;
+    text-align: center;
+    color: #e60012;
+    font-weight: bold;
+}
+.coupon_area {
+    margin-top: 20px;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    background-color: #fff;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.coupon_box {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+}
+.coupon_area input {
+    width: 230px;
+    height: 14px;
+    line-height: 14px;
+    border: 1px solid #c8c7cc;
+    border-right: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 55px;
+    padding: 11px 5px;
+    color: #A7A7A7;
+}
+.coupon_area .use {
+    width: 80px;
+    height: 38px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    background: #ff5c00;
+    text-align: center;
+    line-height: 38px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    margin-left: -5px;
+}
+.cart3_bott {
+    height: 55px;
+    position: relative;
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.ac {
+    float: left;
+    width: 140px;
+    margin: 20px 0 0 23px;
+}
+.ac .delete {
+    color: #057bd2;
+    text-decoration: underline;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.a-m {
+    float: right;
+    width: 800px;
+}
+.a-m span {
+    float: right;
+}
+.a-m .submit_b {
+    height: 55px;
+    width: 145px;
+    line-height: 55px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    background: #ff5c00;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.a-m .totCash {
+    vertical-align: middle;
+    font-size: 28px;
+    color: #e60012;
+    margin: 0 15px;
+    line-height: 2;
+}
+.a-m .det {
+    line-height: 4;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.a-m .det strong {
+    color: #e60012;
+}

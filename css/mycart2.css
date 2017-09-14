@@ -1,0 +1,407 @@
+body { background: #ededed;  }
+html {color: #000; background: #fff; height: 100%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+article, aside, dialog, footer, header, section, footer, nav, figure, menu { display: block; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+code, kbd, pre, samp { font-family: courier new,courier,monospace; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+li { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+.clearfix { zoom: 1; display: block;}
+img { display: block; }
+a{ text-decoration: none; color:#666666}
+a:hover { color:#FF5C00; }
+.clear { margin: 0;padding: 0;clear: both;}
+
+
+
+.order-outer {
+	background: #ececec;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.checkout {
+    overflow: hidden;
+    zoom: 1;
+    margin: 0 auto;
+    width: 1090px;
+    padding-top: 10px;
+}
+.checkout-step-1,.checkout-step-2,.checkout-step-3,.checkout-step-4,.checkout-step-5 {
+    border: 1px solid #d3d3d3;
+    width: 998px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.checkout .step-title {
+    height: 44px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 44px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.step-title h2 {
+	font-weight: bold;
+}
+.sbox {
+	width: 998px;
+	overflow: hidden;
+}
+.write-info {
+	padding: 10px 0 20px;
+}
+.consignee-form {
+	padding-left: 12px;
+}
+.list {
+	padding: 5px 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.form .label , .form input, .form select{
+    float: left;
+    font-size: 12px;
+    color: #555;
+}
+.label {
+	/*width: 85px;*/
+	height: 26px;
+	margin-right: 5px;
+	line-height: 26px;
+	text-align: right;
+}
+.list .field {
+    height: 26px;
+    float: left;
+    line-height: 26px;
+}
+.field {
+    overflow: hidden;
+    position: relative;
+}
+.field, .group {
+    zoom: 1;
+}
+.textbox {
+    width: 138px;
+    height: 16px;
+    border: 1px solid #ccc;
+    padding: 4px 3px;
+}
+.select-address select {
+    height: 22px;
+    margin: 2px 5px 0 0;
+}
+select {
+    border: 1px solid #ccc;
+}
+option {
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.full-address .textbox {
+    width: 308px;
+}
+#consignee_phone_left {
+    width: 44px;
+}
+#consignee_phone_middle {
+    width: 144px;
+}
+#consignee_phone_right {
+    width: 54px;
+}
+.field s {
+    float: left;
+    margin: 0 5px;
+    color: #ccc;
+    text-decoration: none;
+}
+.form-btn {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 101px;
+}
+.field, .group {
+    zoom: 1;
+}
+a.btn-submit, a.btn-submit:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-submit, .btn-cancel {
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 20px;
+    float: left;
+    line-height: 30px;
+    background: url(../image/btn-ff.png) no-repeat;
+}
+.btn-submit span, .btn-cancel span {
+    height: 30px;
+    padding-right: 20px;
+    float: left;
+    cursor: pointer;
+    background: url(../image/btn-ff.png) no-repeat 100% -30px;
+}
+a.btn-cancel, .btn-cancel span {
+    background-image: none;
+    background-color: #f8f8f8;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+.btn-submit, .btn-cancel {
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 20px;
+    float: left;
+    line-height: 30px;
+    background: url(../image/btn-ff.png) no-repeat 100% -30px;
+}
+
+.checkout-step-1, .checkout-step-2, .checkout-step-3, .checkout-step-4, .checkout-step-5 {
+    border: 1px solid #d3d3d3;
+    width: 998px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 5px 9px 42px #e4e4e4;
+}
+.checkout .step-title {
+    height: 44px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 44px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.step-content-type1 {
+    padding: 0 42px;
+    color: #f00;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+}
+.checkout-step-4 .step-title {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+.checkout .step-title {
+    height: 44px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 44px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.step-title .fr {
+    margin-right: 12px;
+    line-height: 44px;
+    color: #06c;
+    font-size: 14px;
+}
+.fr {
+    float: right;
+}
+.part-order-dl {
+    border-bottom: 1px solid #ccc;
+}
+.part-order-dt {
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    background-color: #ececec;
+    position: relative;
+    margin-left: -1px;
+    width: 98%;
+    z-index: 10;
+}
+.part-order-dt .fl {
+    height: 48px;
+}
+.fl {
+    float: left;
+    font-size: 14px;
+}
+.order-type-shang, .order-type-te, .order-type-hai {
+    padding: 5px 6px;
+    color: #fff;
+    border-radius: 3px;
+}
+.order-type-shang {
+    background-color: #ff5c00;
+}
+.order-fore {
+    color: #f00;
+    padding-left: 8px;
+}
+.part-order-dd {
+	zoom: 1;
+}
+.order-review-thead {
+    height: 44px;
+    line-height: 44px;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ff5c00;
+    margin-left: -1px;
+    overflow: hidden;
+    width: 996px;
+}
+.fore-name {
+    padding-left: 30px;
+}
+.fore-name, .fore-price, .fore-num, .fore-cal {
+    float: left;
+    display: block;
+    width: 535px;
+    font-size: 12px;
+}
+.fore-price {
+    width: 150px;
+}
+.fore-price, .fore-num, .fore-cal {
+    text-align: center;
+}
+.fore-num {
+	width: 150px;
+}
+.fore-cal {
+	width: 120px;
+}
+.order-review-list {
+	border-bottom: 1px solid #dfdfdf;
+	padding: 8px 0 8px 30px;
+	box-shadow: 0 3px 6px #eee;
+}
+.order-review-list li {
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.pic {
+    background-color: #fff;
+    width: 60px;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    border: 1px #e5e5e5 solid;
+    border-radius: 2px;
+    padding: 6px;
+    background: #fff;
+}
+.inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tit {
+    padding-left: 9px;
+    width: 440px;
+    padding-right: 12px;
+    position: relative;
+}
+.tit a {
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    line-height: 18px;
+}
+.price ,.num{
+    width: 140px;
+    text-align: center;
+}
+ins {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+}
+.count {
+    width: 110px;
+    text-align: center;
+    line-height: 1.2;
+}
+.count strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+.order-review-tfoot {
+	height: 42px;
+    line-height: 42px;
+    position: relative;
+    color: #555;
+    zoom: 1;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+.order-review-tfoot-fl-dt, .order-review-tfoot-fl-dd {
+    padding-left: 20px;
+    line-height: 30px;
+}
+.order-review-tfoot-fl-dt a {
+    color: #06c;
+}
+.order-review-tfoot-fr {
+    float: right;
+    position: relative;
+}
+.order-review-tfoot-list {
+    height: 24px;
+    line-height: 24px;
+    overflow: inherit;
+    zoom: 1;
+    position: relative;
+    padding: 2px 0;
+}
+.pro-pay-totle, .pro-pay-deliver, .pro-pay-cheap, .pro-totle {
+    width: 150px;
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    display: block;
+}
+.order-review-tfoot-list strong {
+    color: #666;
+    float: left;
+    width: 100px;
+    text-align: right;
+    display: block;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.foot-beian {
+    line-height: 24px;
+    text-align: center;
+    color: #939393;
+    margin-top: 10px;
+    background: white;
+}
+.foot-beian span {
+	font-size: 12px;
+}
+.foot-gongwang {
+    padding: 10px;
+    text-align: center;
+    line-height: 24px;
+}
+.foot-gongwang a {
+    display: block;
+    margin: 0 auto;
+}
+.foot-gongwang a img {
+    display: inline-block;
+}

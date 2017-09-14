@@ -1,0 +1,51 @@
+/*main*/
+.sign-content {
+	height: 380px;
+}
+
+.login-right {
+	float: right;
+	width: 55%;
+	margin-top: 20px;
+}
+.login-left {
+	float: left;
+	width:45%;
+	text-align: center;
+}
+.login-form li .inputcont .argwrap input.checkbox {
+    margin-top: 5px;
+}
+.login-form .forgetpassword {
+	font-size: 14px;
+	color: #20bfff;
+}
+.login-form .submit-signin {
+	background: url(../image/register.png) no-repeat;
+}
+.login-form li .inputcont input.submit-signin {
+    background-position: 0px -328px;
+    width: 229px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+.login-nav i {
+	background: url(../image/register.png) no-repeat;
+}
+.login-nav ul li.selected i {
+	display: inline-block;
+    background-position: -255px 1px;
+    width: 38px;
+    height: 27px;
+    vertical-align: -6px;
+}
+.login-nav ul li i {
+	display: inline-block;
+    background-position: -191px 1px;
+    width: 27px;
+    height: 27px;
+    vertical-align: -5px;
+}
+
+
